@@ -1,0 +1,30 @@
+{
+  "name": "mini-webserver",
+  "version": "0.1.0",
+  "description": "A Express.js based webserver which only serves static files",
+  "main": "mini-webserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobilg/docker-mini-webserver.git"
+  },
+  "keywords": [
+    "mini",
+    "webserver",
+    "express",
+    "static",
+    "files",
+    "docker"
+  ],
+  "author": "tobilg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tobilg/docker-mini-webserver/issues"
+  },
+  "homepage": "https://github.com/tobilg/docker-mini-webserver",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
