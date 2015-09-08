@@ -1,21 +1,6 @@
-FROM ubuntu:14.04.3
-MAINTAINER tobilg <fb.tools.github@gmail.com>
-
-# packages
-RUN apt-get update && apt-get install -yq --no-install-recommends --force-yes \
-    curl
+FROM mhart/alpine-node:0.10.40
 	
-# Add Node.js repo
-RUN curl -sL https://deb.nodesource.com/setup | bash -
-
-RUN apt-get update && apt-get install -yq --no-install-recommends --force-yes \
-	nodejs \
-	npm 
-	
-RUN ln -s /usr/bin/nodejs /usr/bin/node
-	
-RUN mkdir /app
-RUN mkdir /app/public
+RUN mkdir -p /app && mkdir -p /app/public
 
 ADD package.json /app/package.json 
 ADD mini-webserver.js /app/mini-webserver.js
