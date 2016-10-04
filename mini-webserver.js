@@ -7,7 +7,10 @@ var port = process.env.SERVER_PORT || 80;
 
 app.use(morgan('combined'));
 app.use(express.static(__dirname + '/public'));
-app.use(serveIndex(__dirname + '/public'))
+
+if (process.env.SERVE_INDEX !== 'false') {
+	app.use(serveIndex(__dirname + '/public'))
+}
 
 app.get('/status', function (req, res) {
   res.send('Hello from the Mini Webserver!');
