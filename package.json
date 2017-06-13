@@ -1,6 +1,6 @@
 {
   "name": "mini-webserver",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A Express.js based webserver which only serves static files",
   "main": "mini-webserver.js",
   "scripts": {
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/tobilg/docker-mini-webserver",
   "dependencies": {
-    "express": "^4.13.3",
-    "morgan": "^1.6.1"
+    "express": "^4.15.3",
+    "morgan": "^1.2.2"
   }
 }

@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:0.10.40
+FROM mhart/alpine-node:8
 	
 RUN mkdir -p /app && mkdir -p /app/public
 
@@ -9,6 +9,6 @@ RUN cd /app && npm install
 
 VOLUME ["/app/public"]
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD ["node", "/app/mini-webserver.js"]
